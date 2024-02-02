@@ -1,0 +1,38 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yu/me326_ros2_ws/build/locobot_base_control
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control//launch/circular_control.launch.py
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/lib/locobot_base_control/circular_control.py
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/ament_index/resource_index/package_run_dependencies/locobot_base_control
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/ament_index/resource_index/parent_prefix_path/locobot_base_control
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/environment/ament_prefix_path.sh
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/environment/ament_prefix_path.dsv
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/environment/path.sh
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/environment/path.dsv
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/local_setup.bash
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/local_setup.sh
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/local_setup.zsh
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/local_setup.dsv
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/package.dsv
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/ament_index/resource_index/packages/locobot_base_control
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/cmake/locobot_base_controlConfig.cmake
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/cmake/locobot_base_controlConfig-version.cmake
+-- Symlinking: /home/yu/me326_ros2_ws/install/locobot_base_control/share/locobot_base_control/package.xml

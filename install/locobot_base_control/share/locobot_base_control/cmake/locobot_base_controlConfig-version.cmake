@@ -1,0 +1,1 @@
+/home/yu/me326_ros2_ws/build/locobot_base_control/ament_cmake_core/locobot_base_controlConfig-version.cmake

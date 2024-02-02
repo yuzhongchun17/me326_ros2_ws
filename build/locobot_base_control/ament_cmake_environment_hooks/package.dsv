@@ -1,0 +1,4 @@
+source;share/locobot_base_control/local_setup.bash
+source;share/locobot_base_control/local_setup.dsv
+source;share/locobot_base_control/local_setup.sh
+source;share/locobot_base_control/local_setup.zsh
