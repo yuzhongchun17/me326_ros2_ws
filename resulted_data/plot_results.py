@@ -1,8 +1,23 @@
 import json
 import matplotlib.pyplot as plt
+import os
+
+# Define the directory where you want to save the figures
+save_dir = "/home/yu/me326_ros2_ws/resulted_data/"
+
+# Check if the directory exists, if not, create it
+if not os.path.exists(save_dir):
+    os.makedirs(save_dir)
+
+# Now, append your filenames to this directory when saving
+
 
 def load_results(filename):
-    with open(filename, 'r') as f:
+    # Construct an absolute path to the file
+    base_dir = "/home/yu/me326_ros2_ws/resulted_data/"
+    file_path = os.path.join(base_dir, filename)
+    
+    with open(file_path, 'r') as f:
         return json.load(f)
 
 # Load the results
@@ -10,50 +25,52 @@ results_05 = load_results('results_kp_0.5.json')
 results_1 = load_results('results_kp_1.0.json')
 results_2 = load_results('results_kp_2.0.json')
 
-# # t vs. x
-# plt.figure(figsize=(10, 5))
-# plt.plot(results_05['time_stamps'], results_05['desired_xs'],label='Ground Truth')
-# # plt.plot(results_1['time_stamps'], results_1['desired_xs'],label='Ground Truth 1')
-# # plt.plot(results_2['time_stamps'], results_2['desired_xs'],label='Ground Truth 2')
-# plt.plot(results_05['time_stamps'], results_05['actual_xs'], label='Kp = 0.5')
-# plt.plot(results_1['time_stamps'], results_1['actual_xs'], label='Kp = 1.0')
-# plt.plot(results_2['time_stamps'], results_2['actual_xs'], label='Kp = 2.0')
-# plt.title('Actual x-coordinate Over Time for Different Kp Values')
-# plt.xlabel('t (s)')
-# plt.ylabel('x (m)')
-# plt.legend()
-# plt.grid(True)
-# plt.show()
+import matplotlib.pyplot as plt
+
+# Assuming results_05, results_1, results_2 are defined and loaded from your JSON files
+
+# t vs. x
+plt.figure(figsize=(10, 5))
+plt.plot(results_05['time_stamps'], results_05['desired_x'], label='Ground Truth')
+plt.plot(results_05['time_stamps'], results_05['actual_x'], label='Kp = 0.5')
+plt.plot(results_1['time_stamps'], results_1['actual_x'], label='Kp = 1.0')
+plt.plot(results_2['time_stamps'], results_2['actual_x'], label='Kp = 2.0')
+plt.title('Actual x-coordinate Over Time for Different Kp Values')
+plt.xlabel('Time (s)')
+plt.ylabel('x-coordinate (m)')
+plt.legend()
+plt.grid(True)
+plt.savefig(os.path.join(save_dir, 't_vs_x.png'))
+plt.show()
 
 # t vs. y
 plt.figure(figsize=(10, 5))
-plt.plot(results_05['time_stamps'], results_05['desired_y'],label='Ground Truth')
-# plt.plot(results_1['time_stamps'], results_1['desired_xs'],label='Ground Truth 1')
-# plt.plot(results_2['time_stamps'], results_2['desired_xs'],label='Ground Truth 2')
+plt.plot(results_05['time_stamps'], results_05['desired_y'], label='Ground Truth')
 plt.plot(results_05['time_stamps'], results_05['actual_y'], label='Kp = 0.5')
 plt.plot(results_1['time_stamps'], results_1['actual_y'], label='Kp = 1.0')
 plt.plot(results_2['time_stamps'], results_2['actual_y'], label='Kp = 2.0')
 plt.title('Actual y-coordinate Over Time for Different Kp Values')
-plt.xlabel('t (s)')
-plt.ylabel('y (m)')
+plt.xlabel('Time (s)')
+plt.ylabel('y-coordinate (m)')
 plt.legend()
 plt.grid(True)
+plt.savefig(os.path.join(save_dir, 't_vs_y.png'))
 plt.show()
 
-# # x vs. y
-# plt.figure(figsize=(10, 10))
-# plt.plot(results_05['desired_xs'], results_05['desired_y'],label='Ground Truth')
-# # plt.plot(results_1['time_stamps'], results_1['desired_xs'],label='Ground Truth 1')
-# # plt.plot(results_2['time_stamps'], results_2['desired_xs'],label='Ground Truth 2')
-# plt.plot(results_05['actual_xs'], results_05['actual_y'], label='Kp = 0.5')
-# plt.plot(results_1['actual_xs'], results_1['actual_y'], label='Kp = 1.0')
-# plt.plot(results_2['actual_xs'], results_2['actual_y'], label='Kp = 2.0')
-# plt.title('Trajectory for Different Kp Values')
-# plt.xlabel('t (s)')
-# plt.ylabel('x (m)')
-# plt.legend()
-# plt.grid(True)
-# plt.show()
+# x vs. y
+plt.figure(figsize=(10, 10))
+plt.plot(results_05['desired_x'], results_05['desired_y'], label='Ground Truth')
+plt.plot(results_05['actual_x'], results_05['actual_y'], label='Kp = 0.5')
+plt.plot(results_1['actual_x'], results_1['actual_y'], label='Kp = 1.0')
+plt.plot(results_2['actual_x'], results_2['actual_y'], label='Kp = 2.0')
+plt.title('Trajectory for Different Kp Values')
+plt.xlabel('x-coordinate (m)')
+plt.ylabel('y-coordinate (m)')
+plt.legend()
+plt.grid(True)
+plt.savefig(os.path.join(save_dir, 'x_vs_y.png'))
+plt.show()
+
 
 # import csv
 
