@@ -24,7 +24,13 @@ def generate_launch_description():
         package='locobot_base_control',
         executable='circular_control.py',
         name='circular_control',
-        parameters=[{'Kp_linear': 0.5, 'Kp_angular': 0.5}]
+        parameters=[{'Kp_linear': 0.5}]
+    )
+
+    # delay
+    delay_and_conotrol = TimerAction(
+        period=5.0,  # Delay in seconds
+        actions=[control_node]
     )
 
     # Start rqt_graph
@@ -43,19 +49,13 @@ def generate_launch_description():
         actions=[Shutdown()]
     )
 
-
-    # rosbag (.db3) to .csv
-
-    # play_bag = ExecuteProcess(
-    #     cmd=['ros2 bag play k_05_rosbag/k05']
-    # )
-
     echo_bag = ExecuteProcess(
         cmd=['ros2 topic echo /locobot/twist_stamped > /path/to/kp_05_data.csv']
     )
     return LaunchDescription([
         simulation_launch,
-        control_node
+        delay_and_conotrol
+        # control_node
         # rqt_graph,
         # record_bag,
         # stop_record_bag
