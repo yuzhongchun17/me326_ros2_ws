@@ -3,6 +3,62 @@
 
 CMakeFiles/moveit_arm.dir/src/moveit_arm.cpp.o
  /home/yu/me326_ros2_ws/src/move_group_interface/src/moveit_arm.cpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/container.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/cost_queue.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/introspection.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/properties.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/cartesian_path.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/joint_interpolation.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/pipeline_planner.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/solvers/planner_interface.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stage.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/compute_ik.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/connect.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/current_state.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fix_collision_objects.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fixed_cartesian_poses.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/fixed_state.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_grasp_pose.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_place_pose.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/generate_pose.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/modify_planning_scene.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/move_relative.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/move_to.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/stages/predicate_filter.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/storage.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/task.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/type_traits.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_core/include/moveit/task_constructor/utils.h
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/property__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/property__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/solution__builder.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/solution__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/solution__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/solution_info__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/solution_info__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/stage_description__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/stage_description__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/stage_statistics__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/stage_statistics__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/sub_solution__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/sub_solution__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/sub_trajectory__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/sub_trajectory__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/task_description__builder.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/task_description__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/task_description__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/task_statistics__builder.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/task_statistics__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/detail/task_statistics__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/solution.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/task_description.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/msg/task_statistics.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/srv/detail/get_solution__builder.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/srv/detail/get_solution__struct.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/srv/detail/get_solution__traits.hpp
+ /home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include/moveit_task_constructor_msgs/srv/get_solution.hpp
  /opt/ros/galactic/include/action_msgs/msg/detail/goal_info__builder.hpp
  /opt/ros/galactic/include/action_msgs/msg/detail/goal_info__functions.h
  /opt/ros/galactic/include/action_msgs/msg/detail/goal_info__struct.h
@@ -54,10 +110,14 @@ CMakeFiles/moveit_arm.dir/src/moveit_arm.cpp.o
  /opt/ros/galactic/include/geometry_msgs/msg/detail/point__struct.h
  /opt/ros/galactic/include/geometry_msgs/msg/detail/point__struct.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/point__traits.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/point_stamped__builder.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/point_stamped__struct.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/point_stamped__traits.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/pose__builder.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/pose__struct.h
  /opt/ros/galactic/include/geometry_msgs/msg/detail/pose__struct.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/pose__traits.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/pose_stamped__builder.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/pose_stamped__functions.h
  /opt/ros/galactic/include/geometry_msgs/msg/detail/pose_stamped__struct.h
  /opt/ros/galactic/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp
@@ -74,17 +134,27 @@ CMakeFiles/moveit_arm.dir/src/moveit_arm.cpp.o
  /opt/ros/galactic/include/geometry_msgs/msg/detail/twist__builder.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/twist__struct.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/twist__traits.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/twist_stamped__builder.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/twist_stamped__struct.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/twist_stamped__traits.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3__builder.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3__struct.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3__traits.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3_stamped__builder.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3_stamped__struct.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/vector3_stamped__traits.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/wrench__struct.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/detail/wrench__traits.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/point_stamped.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/pose.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/pose_stamped.h
+ /opt/ros/galactic/include/geometry_msgs/msg/pose_stamped.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/rosidl_generator_c__visibility_control.h
  /opt/ros/galactic/include/geometry_msgs/msg/transform_stamped.hpp
  /opt/ros/galactic/include/geometry_msgs/msg/twist.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/twist_stamped.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/vector3.hpp
+ /opt/ros/galactic/include/geometry_msgs/msg/vector3_stamped.hpp
  /opt/ros/galactic/include/libstatistics_collector/collector/collector.hpp
  /opt/ros/galactic/include/libstatistics_collector/collector/generate_statistics_message.hpp
  /opt/ros/galactic/include/libstatistics_collector/collector/metric_details_interface.hpp
@@ -95,6 +165,7 @@ CMakeFiles/moveit_arm.dir/src/moveit_arm.cpp.o
  /opt/ros/galactic/include/libstatistics_collector/topic_statistics_collector/received_message_period.hpp
  /opt/ros/galactic/include/libstatistics_collector/topic_statistics_collector/topic_statistics_collector.hpp
  /opt/ros/galactic/include/libstatistics_collector/visibility_control.hpp
+ /opt/ros/galactic/include/moveit/collision_detection/collision_common.h
  /opt/ros/galactic/include/moveit/exceptions/exceptions.h
  /opt/ros/galactic/include/moveit/kinematics_base/kinematics_base.h
  /opt/ros/galactic/include/moveit/macros/class_forward.h
@@ -403,6 +474,7 @@ CMakeFiles/moveit_arm.dir/src/moveit_arm.cpp.o
  /opt/ros/galactic/include/rclcpp/rate.hpp
  /opt/ros/galactic/include/rclcpp/rclcpp.hpp
  /opt/ros/galactic/include/rclcpp/scope_exit.hpp
+ /opt/ros/galactic/include/rclcpp/serialization.hpp
  /opt/ros/galactic/include/rclcpp/serialized_message.hpp
  /opt/ros/galactic/include/rclcpp/service.hpp
  /opt/ros/galactic/include/rclcpp/subscription.hpp

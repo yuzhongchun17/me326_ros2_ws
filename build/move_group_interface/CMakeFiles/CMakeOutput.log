@@ -487,3 +487,99 @@ make[1]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CM
 
 
 
+Determining if the function XOpenDisplay exists in the /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so passed with the following output:
+Change Dir: /home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0fa20/fast && make[1]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_0fa20.dir/build.make CMakeFiles/cmTC_0fa20.dir/build
+make[2]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0fa20.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTC_0fa20.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0fa20
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fa20.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTC_0fa20.dir/CheckFunctionExists.c.o  -o cmTC_0fa20  /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+make[2]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function gethostbyname exists passed with the following output:
+Change Dir: /home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a1ff7/fast && make[1]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a1ff7.dir/build.make CMakeFiles/cmTC_a1ff7.dir/build
+make[2]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a1ff7.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTC_a1ff7.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a1ff7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1ff7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTC_a1ff7.dir/CheckFunctionExists.c.o  -o cmTC_a1ff7 
+make[2]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function connect exists passed with the following output:
+Change Dir: /home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fa578/fast && make[1]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_fa578.dir/build.make CMakeFiles/cmTC_fa578.dir/build
+make[2]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa578.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_fa578.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fa578
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fa578.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTC_fa578.dir/CheckFunctionExists.c.o  -o cmTC_fa578 
+make[2]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function remove exists passed with the following output:
+Change Dir: /home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_71767/fast && make[1]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_71767.dir/build.make CMakeFiles/cmTC_71767.dir/build
+make[2]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71767.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTC_71767.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_71767
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_71767.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTC_71767.dir/CheckFunctionExists.c.o  -o cmTC_71767 
+make[2]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function shmat exists passed with the following output:
+Change Dir: /home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_2fad5/fast && make[1]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_2fad5.dir/build.make CMakeFiles/cmTC_2fad5.dir/build
+make[2]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2fad5.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTC_2fad5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2fad5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2fad5.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTC_2fad5.dir/CheckFunctionExists.c.o  -o cmTC_2fad5 
+make[2]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
+Change Dir: /home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3915d/fast && make[1]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_3915d.dir/build.make CMakeFiles/cmTC_3915d.dir/build
+make[2]: Entering directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3915d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTC_3915d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3915d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3915d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTC_3915d.dir/CheckFunctionExists.c.o  -o cmTC_3915d  -lICE 
+make[2]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+make[1]: Leaving directory '/home/yu/me326_ros2_ws/build/move_group_interface/CMakeFiles/CMakeTmp'
+
+
+

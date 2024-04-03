@@ -22,15 +22,30 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "BOOST_SYSTEM_DYN_LINK"
   "BOOST_THREAD_DYN_LINK"
   "DEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp"
+  "PLUGINLIB__DISABLE_BOOST_FUNCTIONS"
+  "QT_CORE_LIB"
+  "QT_GUI_LIB"
+  "QT_NO_DEBUG"
+  "QT_WIDGETS_LIB"
   "RCUTILS_ENABLE_FAULT_INJECTION"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/yu/mtc_galactic/install/moveit_task_constructor_visualization/include"
+  "/home/yu/mtc_galactic/install/moveit_task_constructor_core/include"
+  "/home/yu/mtc_galactic/install/rviz_marker_tools/include"
+  "/home/yu/mtc_galactic/install/moveit_task_constructor_msgs/include"
   "/opt/ros/galactic/include"
   "/usr/include/eigen3"
-  "/usr/include/libqhull_r"
   "/usr/include/bullet"
+  "/usr/include/x86_64-linux-gnu/qt5"
+  "/usr/include/x86_64-linux-gnu/qt5/QtWidgets"
+  "/usr/include/x86_64-linux-gnu/qt5/QtGui"
+  "/usr/include/x86_64-linux-gnu/qt5/QtCore"
+  "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
+  "/usr/include/libqhull_r"
+  "/opt/ros/galactic/opt/rviz_ogre_vendor/include/OGRE"
   )
 
 # Targets to which this target links.

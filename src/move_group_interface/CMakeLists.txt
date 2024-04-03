@@ -10,6 +10,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(moveit_task_constructor_core REQUIRED)
+find_package(moveit_task_constructor_capabilities REQUIRED)
+find_package(moveit_task_constructor_demo REQUIRED)
+find_package(moveit_task_constructor_msgs REQUIRED)
+find_package(moveit_task_constructor_visualization REQUIRED)
+
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -32,6 +39,11 @@ add_executable(moveit_arm src/moveit_arm.cpp)
   ament_target_dependencies(moveit_arm
   rclcpp
   moveit_ros_planning_interface
+  moveit_task_constructor_core
+  moveit_task_constructor_capabilities
+  moveit_task_constructor_demo
+  moveit_task_constructor_msgs
+  moveit_task_constructor_visualization
 )
 # step 3
 install(TARGETS moveit_arm

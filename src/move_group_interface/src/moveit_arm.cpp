@@ -1,13 +1,20 @@
 #include <memory>
 
 #include <rclcpp/rclcpp.hpp>
+#include <cmath>
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/planning_scene_interface/planning_scene_interface.h>
+
+#include <moveit/task_constructor/task.h>
+#include <moveit/task_constructor/stages.h>
+#include <moveit/task_constructor/solvers.h>
 // #include <moveit_msgs/Grasp.h>
 
 auto const logger = rclcpp::get_logger("hello_moveit");
 
 using moveit::planning_interface::MoveGroupInterface;
+using namespace moveit::task_constructor;
+
 bool planAndMoveToPose(MoveGroupInterface& move_group_interface, const geometry_msgs::msg::Pose& target_pose); // func 1: plan and move to the target pose
 bool planAndMoveToNamedTarget(MoveGroupInterface& move_group_interface, const std::string& name);
 
@@ -19,6 +26,9 @@ struct GraspPoses {
 };
 GraspPoses calculateGraspPoses(const geometry_msgs::msg::Pose& block_position); // func2: calculate grasp pose based on block position
 void pick(moveit::planning_interface::MoveGroupInterface& move_group_interface_arm, moveit::planning_interface::MoveGroupInterface& move_group_interface_gripper, const geometry_msgs::msg::Pose& block_position); //func: pick up block
+// void pick(moveit::planning_interface::MoveGroupInterface& move_group_interface_arm, 
+//           moveit::planning_interface::MoveGroupInterface& move_group_interface_gripper, 
+//           const geometry_msgs::msg::Pose& block_position);
 
 int main(int argc, char * argv[])
 {
@@ -32,6 +42,10 @@ int main(int argc, char * argv[])
     // Create move_group_interface for the desired group (arm + gripper in our case)
     MoveGroupInterface move_group_interface_arm(node, "interbotix_arm");
     MoveGroupInterface move_group_interface_gripper(node, "interbotix_gripper");
+
+
+    auto const ee_name = move_group_interface_arm.getEndEffectorLink();
+    RCLCPP_INFO(rclcpp::get_logger("rclcpp"), "End effector link: %s", ee_name.c_str());
 
 
     // TODO1: Get block position (from subscribing ROS topic?)
@@ -105,14 +119,25 @@ GraspPoses calculateGraspPoses(const geometry_msgs::msg::Pose& block_position) {
     // Assuming a fixed orientation for all poses
     auto grasp_orientation = [] {
         geometry_msgs::msg::Quaternion orientation;
-        orientation.x = 1.0; // Example orientation: facing downwards
-        orientation.y = 0.0;
+        orientation.x = 0.0; // Example orientation: facing downwards
+        orientation.y = 0.7071067811865476;
         orientation.z = 0.0;
-        orientation.w = 0.0;
+        orientation.w = 0.7071067811865476;
         // orientation.x = 0.02489;
         // orientation.y = 0.01431;
         // orientation.z = 0.02490;
         // orientation.w = 0.99928;
+
+        return orientation;
+    }();
+
+    auto pose_grasp_orientation = [] {
+        geometry_msgs::msg::Quaternion orientation;
+        orientation.x = 0.0; // Example orientation: facing downwards
+        orientation.y = 0.0;
+        orientation.z = 0.0;
+        orientation.w = 1.0;
+
         return orientation;
     }();
 
@@ -128,9 +153,9 @@ GraspPoses calculateGraspPoses(const geometry_msgs::msg::Pose& block_position) {
     poses.pre_grasp.position.z = block_position.position.z + 0.1; // 10 cm above
 
     // Grasp pose: at the block's position (adjust z if needed to match your gripper's characteristics)
-    poses.grasp.position.x = block_position.position.x - 0.02;
+    poses.grasp.position.x = block_position.position.x;
     poses.grasp.position.y = block_position.position.y;
-    poses.grasp.position.z = block_position.position.z; // Assuming grasp at the block level
+    poses.grasp.position.z = block_position.position.z + 0.012; // Assuming grasp at the block level
 
     // Post-grasp pose: slightly above the grasp pose
     poses.post_grasp.position.x = block_position.position.x;
@@ -139,6 +164,7 @@ GraspPoses calculateGraspPoses(const geometry_msgs::msg::Pose& block_position) {
 
     return poses;
 }
+
 
 
 void pick(moveit::planning_interface::MoveGroupInterface& move_group_interface_arm, moveit::planning_interface::MoveGroupInterface& move_group_interface_gripper, const geometry_msgs::msg::Pose& block_position) {
@@ -173,8 +199,13 @@ void pick(moveit::planning_interface::MoveGroupInterface& move_group_interface_a
 
     // TODO: check if successful 
 
-    // Move to post-grasp pose
-    if (!planAndMoveToPose(move_group_interface_arm, poses.post_grasp)) {
+    // // Move to post-grasp pose
+    // if (!planAndMoveToPose(move_group_interface_arm, poses.post_grasp)) {
+    //     RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to move to post-grasp pose.");
+    //     return;
+    // }
+
+    if (!planAndMoveToNamedTarget(move_group_interface_arm, "Sleep")) {
         RCLCPP_ERROR(rclcpp::get_logger("rclcpp"), "Failed to move to post-grasp pose.");
         return;
     }
